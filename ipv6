@@ -1,0 +1,29 @@
+#!/bin/bash
+
+ISATAP_SERVER=202.120.58.150
+ISATP_CLIENT=sit1
+IF=ppp0
+
+case $1 in
+    start)
+        if [ -n "$2" ]; then
+            LOCAL_IP=$2
+        else
+            LOCAL_IP=$(ip addr show $IF | grep "inet" | awk '{print $2}')
+        fi
+        ip tunnel add $ISATP_CLIENT mode sit remote $ISATAP_SERVER local $LOCAL_IP
+        ip link set dev $ISATP_CLIENT up
+        ip addr add 2001:da8:8000:d010:0:5efe:$LOCAL_IP/64 dev $ISATP_CLIENT
+        ip -6 route add default via 2001:da8:8000:d010::1 metric 1
+        ;;
+
+    stop)
+        ip link set dev $ISATP_CLIENT down
+        ip tunnel del $ISATP_CLIENT
+        ;;
+
+    *)
+        echo "Please specify you action: start [LOCAL_IP] | stop"
+        ;;
+esac
+exit 0
