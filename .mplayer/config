@@ -1,0 +1,24 @@
+[default]
+# Write your default config options here!
+
+#heartbeat-cmd="xscreensaver-command -deactivate >&- 2>&- &"
+
+vo=vdpau
+vc=ffh264vdpau,ffmpeg12vdpau,ffwmv3vdpau,ffvc1vdpau,#ffodivxvdpau,
+ao=alsa
+
+font=FangSong
+
+ass=1
+ass-force-style=FontName=FangSong,Outline=1
+ass-font-scale=1.00
+ass-color=FFFFFF00
+ass-border-color=41A7FD20
+
+subcp=enca:zh:gbk
+sub-fuzziness=1
+subfont-text-scale=4
+
+nolirc=yes
+nojoystick=yes
+
