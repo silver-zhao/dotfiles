@@ -16,7 +16,6 @@ alias pu='sudo pacman -Su'
 alias pq='pacman -Qi'
 alias p6='ping6 -c 2 ipv6.google.com'
 alias mt='mount | column -t'
-alias wi='wicd-curses'
 
 PS1='[\[\033[01;35m\]\u@\h:\[\033[00m\] \[\033[01;34m\]\w\[\033[00m\]]\$ '
 

@@ -1,0 +1,7 @@
+Description='wireless connection to ChinaNet'
+Interface=wlp4s0
+Connection=wireless
+Security=none
+ESSID='ChinaNet'
+IP=dhcp
+DhcpcdOptions='-A -G'
