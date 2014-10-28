@@ -13,7 +13,7 @@ set list
 set listchars=tab:>-,trail:-,eol:<
 set textwidth=80
 set cursorline
-"colorscheme desert
+colorscheme desert
 syntax on
 
 set grepprg=grep\ -nH\ $*

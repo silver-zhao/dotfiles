@@ -1,6 +1,6 @@
 #!/bin/bash
 aplay /home/silver/.config/start.wav &
-ibus-daemon -rdx &
+fcitx-autostart &
 thunar --daemon &
 xscreensaver -nosplash &
 #blueman-applet &

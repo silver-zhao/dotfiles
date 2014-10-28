@@ -3,4 +3,5 @@ wlp4s0
 linkname hello
 name ipv6test@seujs
 noauth
-nodefaultroute
+noproxyarp
+defaultroute

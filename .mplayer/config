@@ -7,17 +7,17 @@ vo=vdpau
 vc=ffh264vdpau,ffmpeg12vdpau,ffwmv3vdpau,ffvc1vdpau,#ffodivxvdpau,
 ao=alsa
 
-font=FangSong
+font=STFangsong
 
 ass=1
-ass-force-style=FontName=FangSong,Outline=1
-ass-font-scale=1.00
-ass-color=FFFFFF00
-ass-border-color=41A7FD20
+ass-force-style=FontName=STFangsong,Outline=1
+ass-border-color=355FC700
+ass-use-margins=1
+#ass-bottom-margin=100
 
 subcp=enca:zh:gbk
 sub-fuzziness=1
-subfont-text-scale=4
+subfont-text-scale = 5
 
 nolirc=yes
 nojoystick=yes
