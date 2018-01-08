@@ -1,0 +1,34 @@
+alias ls='ls -G'
+alias la='ls -A'
+alias ll='ls -AlhF'
+alias grep='grep --color=auto'
+alias ping='ping -c 2'
+alias rl='grealpath'
+alias pd='pushd'
+alias dirs='dirs -v'
+alias pgrep='pgrep -lf'
+
+alias nt='netstat -f inet -p tcp -n'
+alias din='docker run -it --rm --privileged --pid=host walkerlee/nsenter -t 1 -m -n -i -u sh'
+
+# license file of VMware Fusion:
+# /Library/Preferences/VMware Fusion/license-fusion-80-e2-201505
+
+PS1='[\[\e[1;35m\]\u@\h:\[\e[0m\] \[\e[1;34m\]\w\[\e[0m\]]\$ '
+
+alias sl='ss-local -c ~/.local/etc/ss/config.json &'
+
+mkramdisk() {
+    RAMFS_SIZE_MB=1024
+    mount_point=/Volumes/ramdisk
+    ! test -e ${mount_point} && diskutil erasevolume HFS+ 'ramdisk' `hdiutil attach -nomount ram://$((${RAMFS_SIZE_MB}*1024*1024/512))`
+}
+
+rmramdisk() {
+    mount_point=/Volumes/ramdisk
+    test -e ${mount_point} && umount ${mount_point}
+}
+
+if [ -f /usr/local/etc/bash_completion ]; then
+    . /usr/local/etc/bash_completion
+fi
