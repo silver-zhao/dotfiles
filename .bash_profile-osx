@@ -4,8 +4,14 @@ fi
 
 export PATH=~/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export EDITOR=vim
+export P4CONFIG=.p4config
+
+export JAVA_HOME=$(/usr/libexec/java_home)
+
+export LESS='-R'
 
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 
 stty stop undef
 set -o ignoreeof
+shopt -s histappend

@@ -1,0 +1,14 @@
+// putty
+base03 #002b36 (  0, 43, 54) ; Default Background
+base02 #073642 (  7, 54, 66) ; Default Bold Background
+base0  #839496 (131,148,150) ; Default Foreground
+base1  #93a1a1 (147,161,161) ; Default Bold Foreground
+base03 #002b36 (  0, 43, 54) ; Cursor Text
+base0  #839496 (131,148,150) ; Cursor Colour
+
+// osx terminal
+background #042029
+text       #708284
+boldtext   #819090
+selection  #475B62
+cursor     #708284

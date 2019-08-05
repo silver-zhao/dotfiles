@@ -1,0 +1,10 @@
+#!/bin/sh
+xrandr --output Virtual1 --mode 2560x1600 &
+xsetroot -cursor_name left_ptr &
+
+#compiz --replace &
+#cairo-dock &
+#sakura &
+
+pcmanfm --desktop &
+exec jwm

@@ -9,14 +9,20 @@ alias dirs='dirs -v'
 alias pgrep='pgrep -lf'
 
 alias nt='netstat -f inet -p tcp -n'
-alias din='docker run -it --rm --privileged --pid=host walkerlee/nsenter -t 1 -m -n -i -u sh'
+alias din='docker run --rm -it --privileged --pid=host justincormack/nsenter1 /bin/sh'
+
+# screen ~/Library/Containers/com.docker.docker/Data/vms/0/tty
+# python3 /Users/zhaojason/clientstore/git/shadowsocksr/shadowsocks/local.py -c /Users/zhaojason/.local/etc/ss/config-ssr.json -d start
+
+# socks -> http proxy
+# polipo proxyAddress="0.0.0.0" proxyPort=8123 socksParentProxy="127.0.0.1:7070"
+# privoxy --no-daemon ~/.local/etc/privoxy/config
 
 # license file of VMware Fusion:
-# /Library/Preferences/VMware Fusion/license-fusion-80-e2-201505
+# /Library/Preferences/VMware\ Fusion/license-fusion-*
 
-PS1='[\[\e[1;35m\]\u@\h:\[\e[0m\] \[\e[1;34m\]\w\[\e[0m\]]\$ '
+PS1='[\[\e[0;35m\]\u@\h:\[\e[0m\] \[\e[0;32m\]\t\[\e[0m\] \[\e[0;34m\]\w\[\e[0m\]]\$ '
 
-alias sl='ss-local -c ~/.local/etc/ss/config.json &'
 
 mkramdisk() {
     RAMFS_SIZE_MB=1024
