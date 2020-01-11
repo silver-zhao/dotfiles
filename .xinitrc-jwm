@@ -1,10 +1,11 @@
 #!/bin/sh
 xrandr --output Virtual1 --mode 2560x1600 &
-xsetroot -cursor_name left_ptr &
+#xsetroot -cursor_name left_ptr &
+#hsetroot -add "#0E5CA8" -add "#87C6C9" -gradient 0 -center /usr/local/share/pixmaps/logo.png &
 
 #compiz --replace &
 #cairo-dock &
 #sakura &
 
-pcmanfm --desktop &
+#pcmanfm --desktop &
 exec jwm
