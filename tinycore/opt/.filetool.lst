@@ -1,0 +1,11 @@
+opt/.filetool.lst
+opt/bootlocal.sh
+opt/tcemirror
+home/tc/.Xdefaults
+home/tc/.jwmrc
+home/tc/.xinitrc
+home/tc/.config/sakura/sakura.conf
+home/tc/.config/fontconfig/fonts.conf
+usr/local/etc/ssh/ssh_host_ecdsa_key
+usr/local/etc/ssh/ssh_host_ecdsa_key.pub
+usr/local/etc/ssh/sshd_config
