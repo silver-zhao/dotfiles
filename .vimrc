@@ -15,6 +15,7 @@ set listchars=tab:>-,trail:-,eol:<
 set textwidth=80
 set cursorline
 set ruler
+"set directory^=$HOME/.vimswap//
 colorscheme desert
 syntax on
 

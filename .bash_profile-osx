@@ -2,13 +2,15 @@ if [ -f ~/.bashrc ]; then
     . ~/.bashrc
 fi
 
-export PATH=~/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export LANG=en_US.UTF-8
+
+export PATH=~/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin
 export EDITOR=vim
 export P4CONFIG=.p4config
 
-export JAVA_HOME=$(/usr/libexec/java_home)
+#export JAVA_HOME=$(/usr/libexec/java_home)
 
-export LESS='-R'
+#export LESS='-R'
 
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 
